@@ -15,7 +15,7 @@ body{
 
 /*-------------Chat Container -----------------*/
 .chat-container{
-    width: 30%;
+    width: 25%;
     background-color: aqua;
     z-index: 1;
     padding: 20px;
@@ -46,13 +46,14 @@ body{
 }
 /*-------------Swiper Container -----------------*/
 .swipe-container{
-    width: 70%;
+    width: 75%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 100vh;
     background: linear-gradient(0deg, rgb(255, 96, 54), rgb(253, 38, 122)) no-repeat;
     z-index: 0;
+    overflow: hidden;
 }
 
 #swiper {
