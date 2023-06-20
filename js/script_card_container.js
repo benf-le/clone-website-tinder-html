@@ -5,11 +5,12 @@ const dislike = document.querySelector('#dislike');
 
 // constants
 const urls = [
-  'https://source.unsplash.com/random/1000x1000/?sky',
-  'https://source.unsplash.com/random/1000x1000/?landscape',
-  'https://source.unsplash.com/random/1000x1000/?ocean',
-  'https://source.unsplash.com/random/1000x1000/?moutain',
-  'https://source.unsplash.com/random/1000x1000/?forest'
+  'https://i.imgur.com/oPj4A8u.jpg',
+  'https://i.imgur.com/OckVkRo.jpg',
+  'https://i.imgur.com/Al4nSX8.jpg',
+  'https://i.imgur.com/Q9WPlWA.jpg',
+  'https://i.imgur.com/MWAcQRM.jpg',
+  'https://i.imgur.com/H07Fxdh.jpg'
 ];
 
 // variables

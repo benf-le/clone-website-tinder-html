@@ -14,18 +14,81 @@ body{
 
 
 /*-------------Chat Container -----------------*/
+
+/*.chat-display{*/
+/*    !*padding: 20px;*!*/
+/*    !*height: 60vh;*!*/
+/*    !*overflow-y: auto; !*dùng để cuộn tất cả tin nhắn lên xuống*!*!*/
+/*}*/
+
+
 .chat-container{
     width: 25%;
-    background-color: aqua;
+    background-color: white;
     z-index: 1;
-    padding: 20px;
+    /*padding: 20px;*/
     overflow-y: auto; /*dùng để cuộn tất cả tin nhắn lên xuống*/
 }
 
+.chat-container-header {
+    background: linear-gradient(45deg, #fd2b75, #ff4b2b);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.chat-container-header .profile,
+.chat-container-header .log-out-icon {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.chat-container .option {
+    border: none;
+    background-color: white;
+    border-bottom: solid 4px rgb(243, 33, 33);
+    font-size: 20px;
+    margin: 2px;
+    padding: 10px;
+}
+
+
+
 .chat-input{
+    position: absolute;
+    bottom: 2vh;
     padding: 0 20px;
     display: flex;
     flex-direction: row;
+}
+
+
+
+.img-container {
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 10px;
+
+}
+
+.img-container img{
+    width: 100%;
+}
+
+.chat-user{
+    display: flex;
+    flex-direction: row;
+}
+.chat-user .username{
+    color:black;
+    font-size: larger;
+    font-weight: bold;
+    padding: 12px;
 }
 
 .submit-button {
@@ -85,6 +148,17 @@ body{
     object-fit: cover;
     object-position: 50% 50%;
 }
+
+
+h3{
+   text-align: center;
+    color: white;
+    z-index: 3;
+}
+
+
+
+
 
 #like,
 #dislike {

@@ -10,31 +10,57 @@
 </head>
 <body>
 <div class="dashboard">
+
     <div class="chat-container">
-        <div class="chat-input">
-            <input type="text"/>
-            <button class="submit-button">Submit</button>
+        <div class="chat-container-header">
+            <div class="profile">
+                <div class="img-container">
+                    <img src="../img/favicon.png"/>
+                </div>
+                <h3>Arian Grande</h3>
+            </div>
+            <i class="log-out-icon" onClick={logout}>
+                <ion-icon name="log-out-outline"></ion-icon>
+            </i>
         </div>
+
+        <div>
+            <button class="option" onclick="toggleChat()">Matches</button>
+            <button class="option" onclick="toggleMatches()">Chat</button>
+        </div>
+
+        <div id="chatContent" style="display: none;">
+            <div class="chat-display">
+                <div class="chat-user">
+                    <div class="img-container">
+                        <img src="../img/favicon.png"/>
+                    </div>
+                    <div class="username">Jackson</div>
+
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text"/>
+                <button class="submit-button">Submit</button>
+            </div>
+        </div>
+
     </div>
+
     <div class="swipe-container">
 
         <ion-icon id="dislike" name="heart-dislike"></ion-icon>
         <div id="swiper">
-            <!-- <div class="card" style="--i:0">
-              <img src="https://source.unsplash.com/random/1000x1000/?sky" alt="">
-            </div>
-            <div class="card" style="--i:1">
-              <img src="https://source.unsplash.com/random/1000x1000/?landscape" alt="">
-            </div>
-            <div class="card" style="--i:2">
-              <img src="https://source.unsplash.com/random/1000x1000/?ocean" alt="">
-            </div>
-            <div class="card" style="--i:3">
-              <img src="https://source.unsplash.com/random/1000x1000/?moutain" alt="">
-            </div>
-            <div class="card" style="--i:4">
-              <img src="https://source.unsplash.com/random/1000x1000/?forest" alt="">
-            </div> -->
+            <div class="card" style="--i:i"></div>
+            <h3>David</h3>
+            <!--            <div class="card" style="&#45;&#45;i:1">-->
+            <!--            </div>-->
+            <!--            <div class="card" style="&#45;&#45;i:2">-->
+            <!--            </div>-->
+            <!--            <div class="card" style="&#45;&#45;i:3">-->
+            <!--            </div>-->
+            <!--            <div class="card" style="&#45;&#45;i:4">-->
+            <!--            </div> &ndash;&gt;-->
         </div>
         <ion-icon id="like" name="heart"></ion-icon>
 
@@ -48,5 +74,8 @@
 
 
 </div>
-</div></body>
+</div>
+
+<script src="../js/action.js"></script>
+</body>
 </html>
