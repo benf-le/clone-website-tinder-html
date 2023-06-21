@@ -49,7 +49,6 @@ body{
 .chat-container .option {
     border: none;
     background-color: white;
-    border-bottom: solid 4px rgb(243, 33, 33);
     font-size: 20px;
     margin: 2px;
     padding: 10px;
@@ -80,15 +79,31 @@ body{
     width: 100%;
 }
 
-.chat-user{
-    display: flex;
-    flex-direction: row;
+.match-display{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
 }
-.chat-user .username{
+.match-user .username{
     color:black;
     font-size: larger;
     font-weight: bold;
     padding: 12px;
+}
+
+.chat-user {
+    display: flex;
+}
+
+.chat-area .username{
+    color:black;
+    font-size: larger;
+    font-weight: bold;
+    padding: 10px 10px 5px 10px;
+}
+
+.chat-area .chat-text{
+    padding: 0 0 5px 15px;
 }
 
 .submit-button {
