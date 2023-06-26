@@ -186,5 +186,9 @@ hr {
 }
 
 @media screen and (max-width: 900px) {
-
+    .form-container {
+        height: 100%;
+        width: 100%;
+        border-radius: inherit;
+    }
 }
