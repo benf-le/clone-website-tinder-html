@@ -4,13 +4,20 @@ const like = document.querySelector('#like');
 const dislike = document.querySelector('#dislike');
 
 // constants
+// const urls = [
+//     'https://i.imgur.com/oPj4A8u.jpg',
+//     'https://i.imgur.com/OckVkRo.jpg',
+//     'https://i.imgur.com/Al4nSX8.jpg',
+//     'https://i.imgur.com/Q9WPlWA.jpg',
+//     'https://i.imgur.com/MWAcQRM.jpg',
+//     'https://i.imgur.com/H07Fxdh.jpg'
+// ];
 const urls = [
-    'https://i.imgur.com/oPj4A8u.jpg',
-    'https://i.imgur.com/OckVkRo.jpg',
-    'https://i.imgur.com/Al4nSX8.jpg',
-    'https://i.imgur.com/Q9WPlWA.jpg',
-    'https://i.imgur.com/MWAcQRM.jpg',
-    'https://i.imgur.com/H07Fxdh.jpg'
+    '../img/profile2.jpg',
+    '../img/profile3.jpg',
+    '../img/profile4.jpg',
+    '../img/profile5.jpg',
+    '../img/profile6.jpg',
 ];
 
 // variables
