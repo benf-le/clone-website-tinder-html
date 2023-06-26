@@ -11,13 +11,13 @@
 <body>
 <div class="dashboard">
 
-    <div class="chat-container">
+    <div id="chatDisplay" class="chat-container">
         <div class="chat-container-header">
             <div class="profile">
                 <div class="img-container">
                     <img src="../img/favicon.png"/>
                 </div>
-                <h3>Arian Grande</h3>
+                <a href="profile.html"><h3>Ariana Grande</h3></a>
             </div>
             <i class="log-out-icon" onClick={logout}>
                 <ion-icon name="log-out-outline"></ion-icon>
@@ -82,22 +82,20 @@
                 <div class="chat-area">
                     <div class="username">Jackson</div>
                     <div class="chat-text">hi</div>
-                    <div class="chat-text">how are you? </div>
+                    <div class="chat-text">how are you?</div>
                 </div>
 
             </div>
 
             <div class="chat-input">
                 <input type="text"/>
-                <button class="submit-button">Submit</button>
+                <button class="submit-button">Send</button>
             </div>
         </div>
 
     </div>
 
-    <div class="swipe-container">
-
-        <ion-icon id="dislike" name="heart-dislike"></ion-icon>
+    <div id="swiperDisplay" class="swipe-container">
         <div id="swiper">
             <div class="card" style="--i:i"></div>
             <h3>David</h3>
@@ -110,29 +108,39 @@
             <!--            <div class="card" style="&#45;&#45;i:4">-->
             <!--            </div> &ndash;&gt;-->
         </div>
-        <ion-icon id="like" name="heart"></ion-icon>
+        <div class="action-button">
+            <ion-icon id="dislike" name="heart-dislike"></ion-icon>
 
-        <script src="../js/card_container.js"></script>
-        <script src="../js/script_card_container.js"></script>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <ion-icon id="like" name="heart"></ion-icon>
 
-
+        </div>
     </div>
 
-    <nav class="slidemenu">
+    <nav class="slidemenu" >
 
         <!-- Item 1 -->
         <input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle" checked/>
-        <label for="slide-item-1"><p class="icon"><ion-icon name="heart"></ion-icon></p><span>Match</span></label>
+        <label for="slide-item-1" onclick="mobileMatches()">
+            <p class="icon">
+                <ion-icon name="heart"></ion-icon>
+            </p>
+            <span>Match</span></label>
 
         <!-- Item 2 -->
         <input type="radio" name="slideItem" id="slide-item-2" class="slide-toggle"/>
-        <label for="slide-item-2"><p class="icon"><ion-icon name="chatbubbles"></ion-icon></p><span>Chat</span></label>
+        <label for="slide-item-2" onclick="mobileChat()">
+            <p class="icon">
+                <ion-icon name="chatbubbles"></ion-icon>
+            </p>
+            <span>Chat</span></label>
 
         <!-- Item 3 -->
         <input type="radio" name="slideItem" id="slide-item-3" class="slide-toggle"/>
-        <label for="slide-item-3"><p class="icon"><ion-icon name="person"></ion-icon></p><span>Profile</span></label>
+        <label for="slide-item-3">
+            <p class="icon">
+                <ion-icon name="person"></ion-icon>
+            </p>
+            <span>Profile</span></label>
 
 
         <div class="clear"></div>
@@ -148,5 +156,9 @@
 </div>
 
 <script src="../js/action.js"></script>
+<script src="../js/card_container.js"></script>
+<script src="../js/script_card_container.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

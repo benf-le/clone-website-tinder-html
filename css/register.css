@@ -177,6 +177,7 @@ input:focus {
   width: 80%;
 }
 
+
 @media screen and (max-width: 900px) {
   .form-container {
     height: 100%;
