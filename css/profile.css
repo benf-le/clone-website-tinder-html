@@ -203,6 +203,15 @@ hr {
         height: 450px;
         border-radius: 10px 10px 0 0;
     }
+
+    .log-out-icon {
+        display: flex;
+        align-items: center;
+
+    }
+    ion-icon {
+        font-size: 30px;
+    }
 }
 
 /*Table*/
@@ -217,6 +226,15 @@ hr {
         width: 450px;
         height: 650px;
         border-radius: 10px 10px 0 0;
+    }
+
+    .log-out-icon {
+        display: flex;
+        align-items: center;
+
+    }
+    ion-icon {
+        font-size: 35px;
     }
 
 }
